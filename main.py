@@ -1,3 +1,14 @@
+from flask import Flask
+from threading import Thread
+import os
+
+app = Flask('')
+@app.route('/')
+def home():
+    return "Bot is alive!"
+def run():
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 10000)))
+Thread(target=run).start()
 BOT_TOKEN = "8675201793:AAGZDEWD_WSjjQlg68NJBkZ2sxgI6Xb5oDU"
 ADMIN_ID = 7262235922
 
@@ -8,7 +19,6 @@ ADMIN_ID = 7262235922
 import telebot
 from telebot import types
 import json
-import os
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 import time
 
