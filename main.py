@@ -9,7 +9,7 @@ def home():
 def run():
     app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 10000)))
 Thread(target=run).start()
-BOT_TOKEN = "8675201793:AAGZDEWD_WSjjQlg68NJBkZ2sxgI6Xb5oDU"
+BOT_TOKEN = ":8910923118:AAHOnZ80KD6940CroaoKcEzLuCoBSqJWyXU"
 ADMIN_ID = 7262235922
 
 # ============================================
